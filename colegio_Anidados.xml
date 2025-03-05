@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+DTD
+-->
+<!DOCTYPE colegio [
+    <!ELEMENT colegio (alumnos,profesores)>
+        <!ELEMENT alumnos (alumno+)>
+        <!ELEMENT alumno (nombre, apellido, curso, (nota_media | nota_final)?, activo?)>
+            <!ATTLIST alumno num_exp CDATA #REQUIRED>
+        <!ELEMENT nombre (#PCDATA)>
+        <!ELEMENT apellido (#PCDATA)>
+        <!ELEMENT curso (#PCDATA)>
+        <!ELEMENT nota_media (#PCDATA)>
+        <!ELEMENT nota_final (#PCDATA)>
+        <!ELEMENT activo EMPTY>
+    <!ELEMENT profesores (profesor+)>
+        <!ELEMENT profesor (nombre_profesor,asignatura,foto)>
+        <!ELEMENT nombre_profesor (#PCDATA)>
+        <!ELEMENT asignatura (#PCDATA)>
+    <!ELEMENT foto (#PCDATA)>
+]>
+<colegio>
+<alumnos>
+    <alumno num_exp="A001" >
+        <nombre>Constantino</nombre>
+        <apellido>Lantigua Calderín</apellido>
+        <curso>2º ESO</curso>
+        <nota_media>7</nota_media>
+        <activo/>
+    </alumno>
+    <alumno num_exp="A002" >
+        <nombre>Jose</nombre>
+        <apellido>Cruz Caballero</apellido>
+        <curso>2º ESO</curso>
+        <nota_final>9</nota_final>
+    </alumno>
+</alumnos>
+<profesores>
+<profesor>
+<nombre_profesor>Juan</nombre_profesor>
+<asignatura>DAW</asignatura>
+<foto>foto.jpg</foto>
+</profesor>
+</profesores>
+</colegio>
