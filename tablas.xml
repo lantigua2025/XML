@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="estilos.css" title="Estilo"?>
-<center>
 <biblioteca>
   <libro>
     <titulo>La vida está en otra parte</titulo>
@@ -18,4 +17,3 @@
     <fechaPublicacion>1969</fechaPublicacion>
   </libro>
 </biblioteca>
-</center>
