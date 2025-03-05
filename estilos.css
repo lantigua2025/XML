@@ -1,9 +1,11 @@
 html, body {
-  height: 100%;
+  min-height: 100vh;
+  height: 100dvh;
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  font:600;
 }
 
 biblioteca {
@@ -14,6 +16,8 @@ biblioteca {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: rgb(69, 88, 110);
+  background-color: rgb(222, 224, 224);
 }
 
 libro {
